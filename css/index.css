@@ -294,6 +294,7 @@ cursor: pointer;
 .carousel-btn.next {
   right: 40vw;
 }
+
 @media (min-width:641px)  { 
   .main{
     display: grid;
