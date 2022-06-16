@@ -255,16 +255,13 @@
 .slide[data-active] {
     opacity: 1;
 }
-.gallery2 .carousel-btn {
-    margin-top: 50rem;
-}
-.gallery .carousel-btn {
+ .carousel-btn {
     position: absolute;
     z-index: 12;
     background: none;
     border: none;
     font-size: 5rem;
-    margin-top: 60rem;
+    margin-top: 26rem;
     margin-left: 50px;
     color: #004179;
     border: pointer;
