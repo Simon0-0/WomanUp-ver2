@@ -1,0 +1,207 @@
+.topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+}
+.topics > h3 {
+    grid-column: 1/3;
+    grid-row: 1;
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #CB4154;
+    font-size: 25px;
+    text-align: center;
+}
+
+.topics>article {
+    padding: 30px;
+}
+
+.topics>.circle-a {
+    background-image: url(../images/circle-a.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.topics>.circle-b {
+    background-image: url(../images/circle-b.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.topics>.circle-c {
+    background-image: url(../images/circle-c.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.topics>.circle-d {
+    background-image: url(../images/circle-d.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.topics>article>h6 {
+    font-size: 16px;
+    color: #004179;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.values>.title {
+    grid-column: 1/3;
+    grid-row: 1;
+    text-align: center;
+    color: #CB4154;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 20px;
+}
+
+.values>.orange {
+    color: #FE9849;
+}
+
+.values>.pink {
+    color: #CB4154;
+}
+
+.values>.blue {
+    color: #004179;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.team>article>img {
+    width: 80%;
+}
+
+.team>article>a>.linkedin {
+    width: 10%;
+    position: absolute;
+}
+
+.team>article>h5 {
+    color: #CB4154;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.team>article>h6 {
+    color: #CB4154;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.contactus>h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #CB4154;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contactus input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #FE9849;
+    background-color: #FEF6EC;
+    color: #FE9849;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container input[type=submit] {
+    background-color: #FEC191;
+    color: white;
+    align-items: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contactus ::placeholder {
+    color: #FE9849;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contactus>.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.partners>img {
+    width: 100%;
+}
+
+.partners>h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #CB4154;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.sponsors>img {
+    width: 49%;
+    align-items: center;
+}
+
+.sponsors>h3 {
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #CB4154;
+    font-size: 25px;
+    text-align: center;
+
+
+
+}
+
+.rotate {
+    transform: rotate(270deg);
+}
+.info > h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-family: 'Bodoni Moda', sans-serif;
+    color: #CB4154;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+.info > h4 {
+    grid-column: 1/4;
+    grid-row: 1;
+    font-family: 'Quicksand', sans-serif;
+    color: #CB4154;
+    font-size: 20px;
+    padding: 0 3rem;
+}
