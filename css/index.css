@@ -114,6 +114,7 @@ header>img {
   top: 15%;
   background-color: rgba(255, 253, 208, 0.6);
   border-radius: 8px 0 0 8px;
+  z-index: 13;
 }
 
 .sticky-socials a {
@@ -262,26 +263,26 @@ h3 {
 
 .slide > img {
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 7px;
 }
 
-.slide [data-active] {
+.slide[data-active] {
   opacity: 1;
 }
 
 .carousel-btn {
 position: absolute;
-z-index: 2;
+z-index: 12;
 background: none;
 border: none;
 font-size: 3.5rem;
-margin-top: 500px;
+margin-top: 480px;
 margin-left: 50px;
-color: rgba(0, 65, 121,0.6);
+color:  rgba(255, 253, 208, 0.8);
 border: pointer;
 cursor: pointer;
 }
