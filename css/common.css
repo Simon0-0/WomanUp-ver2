@@ -9,7 +9,7 @@ header>span {
   color: #CB4154;
 }
 
-header>img {
+header> a> img {
   width: 40px;
   left: 45px;
   padding: 15px 8px;
