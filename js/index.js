@@ -3,9 +3,11 @@ function openNav() {
   }
   
   function closeNav() {
+
     document.getElementById("myNav").style.width = "0%";
   }
 
+/*
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -20,7 +22,7 @@ function openNav() {
         }
       }
     }
-  }
+  }*/
 
   //slideshowjs
   
