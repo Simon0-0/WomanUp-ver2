@@ -5,27 +5,31 @@ body {
 
 }
 
-.podcast-info > h3 {
-    font-family: 'Bodoni Moda' , sans-serif;
+.podcast-info>h3 {
+    font-family: 'Bodoni Moda', sans-serif;
     font-size: 24px;
     color: #CB4154;
     text-align: center;
 }
-.podcast-info > img {
+
+.podcast-info>img {
     width: 100%;
 }
-.podcast-info > h2{
+
+.podcast-info>h2 {
     font-family: 'Bodoni Moda', sans-serif;
-  color: #CB4154;
-  font-size: 1.8rem;
-  text-align: center;
+    color: #CB4154;
+    font-size: 1.8rem;
+    text-align: center;
 }
-.podcast-info > p {
+
+.podcast-info>p {
     color: #004179;
     margin: 5px 20px;
     font-size: 1.1rem;
 }
-.podcast-info > button {
+
+.podcast-info>button {
     border: none;
     border-bottom: solid #004179 1px;
     color: #004179;
@@ -33,17 +37,19 @@ body {
     margin: 5px 20px;
 }
 
-.podcast-info > .episode {
+.podcast-info>.episode {
     margin: 20px;
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 8px;
 }
-.podcast-info >  .orange {
+
+.podcast-info>.orange {
     background-color: rgba(254, 152, 73, 0.2);
     color: #FE9849;
 }
-.podcast-info > .pink {
+
+.podcast-info>.pink {
     background-color: rgba(203, 65, 84, 0.2);
     color: #CB4154;
 }
@@ -54,7 +60,7 @@ section {
     text-align: center;
     background-color: #fff;
     margin: 0 auto;
-    
+
 }
 
 main {
@@ -70,7 +76,7 @@ article {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
     align-items: center;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 8px;
     margin: 0;
     justify-items: center;
@@ -106,15 +112,68 @@ h4 {
 
 }
 
-.item button {
-    padding: 1rem 2rem;
-    color: #eee;
+.item > button{
+    border: 5px solid #f99;
     background-color: #CB4154;
     border: none;
     border-radius: 12px;
+    padding: 10px 10px;
+}
+.item > button a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 15px;
 }
 
 .item div {
     margin: 2rem;
 }
 
+@media (min-width:641px) {
+    .podcast-info > h3 {
+        color: #fff;
+        font-size: 4rem;
+        margin-bottom: -10rem;
+        z-index: 1;
+        position: relative;
+        
+    }
+
+    .podcast-info>img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        z-index: -1;
+    }
+    .podcast-info > p{
+        margin: 20px 150px;
+    }
+    .podcast-info > button{
+        display: none;
+    }
+    .podcast-info > .episode {
+        margin: 20px 20px 20px 150px;
+
+    }
+    #video {
+        width: 560px;
+    }
+    section{
+        position: relative;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 20px 100px;
+    }
+    p{
+        padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    color: #CB4154;
+    }
+
+}

@@ -3,9 +3,11 @@ function openNav() {
   }
   
   function closeNav() {
+
     document.getElementById("myNav").style.width = "0%";
   }
 
+/*
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -20,7 +22,7 @@ function openNav() {
         }
       }
     }
-  }
+  }*/
 
   //slideshowjs
   
@@ -43,4 +45,15 @@ function openNav() {
     })
   })
 
-  
+  showSlides()
+function showSlides() {
+  let slides = document.querySelector(".gallery [data-slides]") //get the slide parent group
+  const activeSlide = slides.querySelector("[data-active]") //get the currently shown slide  
+  let newIndex = [...slides.children].indexOf(activeSlide) + 1 //we want the next picture in the array, so we calculate the index as current (active) + 1
+  if (newIndex >= slides.children.length) newIndex = 0 // if new index is more than the number of images, loop back and start again
+
+  slides.children[newIndex].dataset.active = true //set the image at the new index as active
+  delete activeSlide.dataset.active // deactivate previous active slide
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+

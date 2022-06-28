@@ -1,6 +1,15 @@
 /* EVERYTHING IS USED MULTIPLE TIMES*/
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Quicksand&display=swap');
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Bodoni Moda', serif;
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
 
 header>span {
   position: absolute;
@@ -140,4 +149,57 @@ p {
 .foot-socials {
   justify-self: center;
   
+}
+
+@media (min-width:641px) {
+  header{
+    display: flex;
+    align-items: center;
+  }
+  .active{
+    border: 2px solid #f99;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    z-index: 1;
+    background-color: #ffffff;
+    overflow-x:hidden;
+    transition: none;
+  }
+  
+  .overlay-content {
+    position: relative;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #E08D98;
+    background-color: #ffffff;
+    display: flex;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #CB4154;
+  }
+  
+  .overlay .closebtn {
+    display: none;
+  }
+  header>span{
+    display: none;
+  }
+
 }

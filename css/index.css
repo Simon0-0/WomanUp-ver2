@@ -6,9 +6,6 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,700&family=Outfit:wght@200;400&family=Quicksand&display=swap');
 
-body {
-  font-family: 'Lato', sans-serif;
-}
 
 header>span {
   position: absolute;
@@ -16,7 +13,7 @@ header>span {
   padding: 8px;
 }
 
-header>img {
+header>a>img {
   width: 40px;
   left: 45px;
   padding: 15px 8px;
@@ -214,6 +211,7 @@ h3 {
 .info-pec p {
   color: #004179;
 }
+
 .info-pec h4 {
   padding: 0 1rem;
 }
@@ -242,7 +240,6 @@ h3 {
 
 
 
-/*lucy's experiments */
 .carousel {
   width: 100vw;
   height: 100vh;
@@ -295,45 +292,47 @@ cursor: pointer;
   right: 40vw;
 }
 
-@media (min-width:641px)  { 
-  .main{
+@media (min-width:641px) {
+  .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 2fr 1fr 0.7fr;
     margin: 10rem 3rem;
     justify-self: center;
   }
+
   .best-info {
     grid-row: 1;
     grid-column: 1;
   }
+
   .image-tea {
     grid-row: 1;
     grid-column: 2;
     background-color: #ffffff;
   }
-  .info-pec{
+
+  .info-pec {
     grid-column: 1/3;
     grid-row: 2;
     display: flex;
   }
+
   .gallery {
     grid-row: 3;
     grid-column: 1/3;
   }
+
   .socials {
     grid-row: 4;
     grid-column: 1/3;
     width: 50%;
     justify-self: center;
   }
-  .reviews{
+
+  .reviews {
     grid-row: 5;
     grid-column: 1/3;
     margin: 0 10rem;
   }
-
- }
-
-
-
+}

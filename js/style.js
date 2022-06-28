@@ -49,7 +49,7 @@ $(document).ready(function () {
                 <p>${datePub}</p>
                 </div>
                 <h4>${title}</h4>
-                <button>Full episode \n<i class="fa fa-play" aria-hidden="true"></i></button>
+                <button><a href="#video">Full episode \n<i class="fa fa-play" aria-hidden="true"></i></a></button>
                 <p>${desc}...</p>
                 <p>${videoOwner}</p>                
            
